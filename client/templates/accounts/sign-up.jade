@@ -1,0 +1,13 @@
+template(name="signUp")
+  .entry(fit layout vertical center center-justified slide-from-right)
+    .entry-body
+      di-form(data-action='sign-up')
+
+        paper-input-decorator.input-light(label='Email Address', error='We need a valid email!', floatinglabel)
+          input#email(is='core-input', type='email', required)
+
+        paper-input-decorator.input-light(label='Password', error='You need a password!', floatinglabel)
+          input#password(is='core-input', type='password', required)
+
+        div(horizontal layout reverse)
+          di-button.btn.btn-accent(type='submit', raised) Sign Up

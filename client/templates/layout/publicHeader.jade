@@ -1,0 +1,26 @@
+template(name="publicHeader")
+  core-toolbar.toolbar.toolbar-primary
+    a.header-logo(href='/')
+      img(src='/img/white-logo.png')
+    div(flex)
+    .visible-md.wide
+      div(layout horizontal)
+        +headerItems
+    paper-menu-button.hidden-md.narrow
+      paper-icon-button(icon='menu', role='button')
+      paper-dropdown.dropdown(halign='right')
+        core-menu.menu
+          +headerItems
+
+
+template(name="headerItems")
+
+  paper-item.toolbar-item
+    a(href='{{pathFor route="pricing"}}')
+      | Pricing
+  paper-item.toolbar-item
+    a(href='{{pathFor route="accounts.signUp"}}')
+      | Sign Up
+  paper-item.toolbar-item
+    a(href='{{pathFor route="accounts.signIn"}}')
+      | Sign In

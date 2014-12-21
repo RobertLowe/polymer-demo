@@ -1,0 +1,40 @@
+template(name="home")
+
+  .public-billboard(relative)
+    .public-billboard-container(fit layout vertical center-justified center)
+      h1 Analytics That Grow Your Business
+      p
+        | You can follow whatever key metric you want.
+        br
+        | As long as you want retention.
+      paper-button.btn.btn-accent.btn-lg(raised) Get Started
+
+  .public-feature(layout vertical center)
+    .public-feature-title How It Works
+    h2 Guidance on what to track
+    p
+      | No more worrying about which events to track or what actions to measure. Based on your industry and revenue model,
+      | we’ll tell you the 4-5 specific events we need in order to measure and analyze your growth.
+    .public-feature-image
+      img(src='/img/feature-data.png')
+
+  .public-feature(layout vertical center)
+    h2 Automatic, informative visualizations
+    p
+      | You won’t need to think about how to graph or analyze your data. We automatically generate the most informative visualizations. Giving you the information you need to quickly make critical growth decisions.
+    .public-feature-image
+      img(src='/img/feature-charts.png')
+
+  .public-feature(layout vertical center)
+    h2 Notifications of anomalies
+    p
+      | Don’t have the time or resources to watch your data in realtime? No worries, we do it for you. We’ll alert you when we notice anomalies in your data, allowing you to react quickly.
+    .public-feature-image
+      img(src='/img/feature-notifications.png')
+
+  .public-cta(layout vertical center)
+    p Make decisions with real data
+    paper-button.btn.btn-accent.btn-lg(raised) Get Started Free
+
+  +contentFor(region="footer")
+    +publicFooter

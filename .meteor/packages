@@ -10,3 +10,4 @@ iron:router
 differential:vulcanize
 coffeescript
 meteorhacks:inject-initial
+mquandalle:jade

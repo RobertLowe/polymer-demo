@@ -1,0 +1,14 @@
+template(name='signIn')
+  .entry(fit='', layout='', vertical='', center='', center-justified='')
+    .entry-body
+
+      di-form(data-action='sign-in')
+
+        paper-input-decorator.input-light(label='Email Address', error='We need a valid email!', floatinglabel='')
+          input#email(is='core-input', type='email', required='')
+
+        paper-input-decorator.input-light(label='Password', error='Whats your password?', floatinglabel='')
+          input#password(is='core-input', type='password', required='')
+
+        div(horizontal='', layout='', reverse='')
+          di-button.btn.btn-accent(type='submit', raised='') Sign In
